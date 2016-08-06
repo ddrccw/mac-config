@@ -54,6 +54,7 @@ ln -s ${CFG_PATH}/.tmux ${HOME}/.tmux
 #others
 ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
 ln -s ${CFG_PATH}/.lldbinit ${HOME}/.lldbinit
+ln -s ${CFG_PATH}/.aria2 ${HOME}/.aria2
 
 echo -e "$RESULT_CLR-------------------- Make Symbolic Links  --------------------$RESULT_CLR"
 
