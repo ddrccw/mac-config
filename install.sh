@@ -19,16 +19,16 @@ TEMP_INSTALL_PATH=${HOME}
 CFG_PATH=${TEMP_INSTALL_PATH}/mac-config
 VIM_PATH=${CFG_PATH}/vim
 
-echo -e "$INFO_CLR-------------------- Downloading Mac-config --------------------$INFO_CLR"
+echo -e "$INFO_CLR-------------------- Downloading Mac-config --------------------$RESET_CLR"
 
 cd "${TEMP_INSTALL_PATH}"
 rm -rf "${CFG_PATH}"
 
 git clone git@github.com:ddrccw/mac-config.git
 
-echo -e "$RESULT_CLR-------------------- Download Mac-config --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Download Mac-config --------------------$RESET_CLR"
 
-echo -e "$INFO_CLR-------------------- Downloading Submodule --------------------$INFO_CLR"
+echo -e "$INFO_CLR-------------------- Downloading Submodule --------------------$RESET_CLR"
 
 cd "${CFG_PATH}"
 git submodule init
@@ -39,9 +39,9 @@ cd "${VIM_PATH}"
 git submodule init
 git submodule update
 
-echo -e "$RESULT_CLR-------------------- Download Submodule --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Download Submodule --------------------$RESET_CLR"
 
-echo -e "$INFO_CLR-------------------- Making Symbolic Links --------------------$INFO_CLR"
+echo -e "$INFO_CLR-------------------- Making Symbolic Links --------------------$RESET_CLR"
 
 rm -rf ${HOME}/.vimrc
 rm -rf ${HOME}/.vim
@@ -64,17 +64,17 @@ ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
 ln -s ${CFG_PATH}/.lldbinit ${HOME}/.lldbinit
 ln -s ${CFG_PATH}/.aria2 ${HOME}/
 
-echo -e "$RESULT_CLR-------------------- Make Symbolic Links  --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Make Symbolic Links  --------------------$RESET_CLR"
 
-echo -e "$INFO_CLR-------------------- Installing Tmux Plugins --------------------$INFO_CLR"
+echo -e "$INFO_CLR-------------------- Installing Tmux Plugins --------------------$RESET_CLR"
 
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 
-echo -e "$RESULT_CLR-------------------- Install Symbolic Links  --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Install Symbolic Links  --------------------$RESET_CLR"
 
-echo -e "$INFO_CLR-------------------- Installing Vim Plugins --------------------$INFO_CLR"
+echo -e "$INFO_CLR-------------------- Installing Vim Plugins --------------------$RESET_CLR"
 
 vim +PluginInstall +qall < /dev/tty
 
-echo -e "$RESULT_CLR-------------------- Install Vim Plugins  --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Install Vim Plugins  --------------------$RESET_CLR"
 
