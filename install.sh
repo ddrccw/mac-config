@@ -15,14 +15,10 @@ if [[ ! -f ${TMUX_PATH} || -z ${TMUX_PATH} ]]; then
 	exit
 fi
 
-TEMP_INSTALL_PATH=~/
-CFG_PATH="$TEMP_INSTALL_PATH"/mac-config
-VIM_PATH="$CFG_PATH"/vim
-
 echo -e "$INFO_CLR-------------------- Downloading Mac-config --------------------$INFO_CLR"
 
 cd "$TEMP_INSTALL_PATH"
-rm -rf "$TEMP_INSTALL_PATH"/mac-config
+rm -rf "$TEMP_INSTALL_PATH"mac-config
 
 git clone git@github.com:ddrccw/mac-config.git
 
@@ -45,16 +41,16 @@ echo -e "$INFO_CLR-------------------- Making Symbolic Links -------------------
 
 #vim
 ln -s ${VIM_PATH}/.vimrc ${HOME}/.vimrc
-ln -s ${VIM_PATH}/.vim ${HOME}/.vim
+ln -s ${VIM_PATH}/.vim ${HOME}/
 
 #tmux
 ln -s ${CFG_PATH}/.tmux.conf ${HOME}/.tmux.conf
-ln -s ${CFG_PATH}/.tmux ${HOME}/.tmux
+ln -s ${CFG_PATH}/.tmux ${HOME}/
 
 #others
 ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
 ln -s ${CFG_PATH}/.lldbinit ${HOME}/.lldbinit
-ln -s ${CFG_PATH}/.aria2 ${HOME}/.aria2
+ln -s ${CFG_PATH}/.aria2 ${HOME}/
 
 echo -e "$RESULT_CLR-------------------- Make Symbolic Links  --------------------$RESULT_CLR"
 
@@ -66,7 +62,7 @@ echo -e "$RESULT_CLR-------------------- Install Symbolic Links  ---------------
 
 echo -e "$INFO_CLR-------------------- Installing Vim Plugins --------------------$INFO_CLR"
 
-vim +PluginInstall +qall
+vim +PluginInstall +qall < /dev/tty
 
-echo -e "$RESULT_CLR-------------------- Installing Vim Plugins  --------------------$RESULT_CLR"
+echo -e "$RESULT_CLR-------------------- Install Vim Plugins  --------------------$RESULT_CLR"
 
