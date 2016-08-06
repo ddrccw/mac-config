@@ -15,10 +15,14 @@ if [[ ! -f ${TMUX_PATH} || -z ${TMUX_PATH} ]]; then
 	exit
 fi
 
+TEMP_INSTALL_PATH=${HOME}
+CFG_PATH=${TEMP_INSTALL_PATH}/mac-config
+VIM_PATH=${CFG_PATH}/vim
+
 echo -e "$INFO_CLR-------------------- Downloading Mac-config --------------------$INFO_CLR"
 
-cd "$TEMP_INSTALL_PATH"
-rm -rf "$TEMP_INSTALL_PATH"mac-config
+cd "${TEMP_INSTALL_PATH}"
+rm -rf "${CFG_PATH}"
 
 git clone git@github.com:ddrccw/mac-config.git
 
@@ -26,18 +30,26 @@ echo -e "$RESULT_CLR-------------------- Download Mac-config -------------------
 
 echo -e "$INFO_CLR-------------------- Downloading Submodule --------------------$INFO_CLR"
 
-cd "$CFG_PATH"
+cd "${CFG_PATH}"
 git submodule init
 git submodule update 
 
 
-cd "$VIM_PATH"
+cd "${VIM_PATH}"
 git submodule init
 git submodule update
 
 echo -e "$RESULT_CLR-------------------- Download Submodule --------------------$RESULT_CLR"
 
 echo -e "$INFO_CLR-------------------- Making Symbolic Links --------------------$INFO_CLR"
+
+rm -rf ${HOME}/.vimrc
+rm -rf ${HOME}/.vim
+rm -rf ${HOME}/.tmux.conf
+rm -rf ${HOME}/.tmux
+rm -rf ${HOME}/.gitconfig
+rm -rf ${HOME}/.lldbinit
+rm -rf ${HOME}/.aria2 
 
 #vim
 ln -s ${VIM_PATH}/.vimrc ${HOME}/.vimrc
