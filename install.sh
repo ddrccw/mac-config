@@ -58,6 +58,7 @@ ln -s ${VIM_PATH}/.vim ${HOME}/
 #tmux
 ln -s ${CFG_PATH}/.tmux.conf ${HOME}/.tmux.conf
 ln -s ${CFG_PATH}/.tmux ${HOME}/
+tmux source-file ${HOME}/.tmux.conf
 
 #others
 ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
