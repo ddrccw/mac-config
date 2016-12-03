@@ -58,7 +58,6 @@ ln -s ${VIM_PATH}/.vim ${HOME}/
 #tmux
 ln -s ${CFG_PATH}/.tmux.conf ${HOME}/.tmux.conf
 ln -s ${CFG_PATH}/.tmux ${HOME}/
-tmux source-file ${HOME}/.tmux.conf
 
 #others
 ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
@@ -70,6 +69,7 @@ echo -e "$RESULT_CLR-------------------- Make Symbolic Links  ------------------
 echo -e "$INFO_CLR-------------------- Installing Tmux Plugins --------------------$RESET_CLR"
 
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
+tmux source-file ${HOME}/.tmux.conf
 
 echo -e "$RESULT_CLR-------------------- Install Symbolic Links  --------------------$RESET_CLR"
 
