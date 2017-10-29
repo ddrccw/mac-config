@@ -92,3 +92,4 @@ source $ZSH/oh-my-zsh.sh
 #非zsh约定的文件，仅用来放不要被git同步的本地配置
 [ -f ~/.zsh_profile ] && source ~/.zsh_profile
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
