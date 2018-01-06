@@ -1,4 +1,14 @@
-command alias reveal_start expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStart" object:nil]
-command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStop" object:nil]
+### Reveal LLDB commands support - DO NOT MODIFY
+command script import /Applications/Reveal.app/Contents/SharedSupport/Scripts/RevealServerCommands.py
+###
 
 command script import /usr/local/opt/chisel/libexec/fblldb.py
+
+
+settings set target.x86-disassembly-flavor intel
+settings set target.skip-prologue false
+command alias cpo expression -l objc -O --
+command regex rlook 's/(.+)/image lookup -rn %1/'
+command alias -H "Print value in ObjC context in hexadecimal" -h "Print in hex" -- cpx expression -f x -l objc --
+command regex ls 's/(.+)/po @import Foundation; [[NSFileManager defaultManager] contentsOfDirectoryAtPath:@"%1" error:nil]/'
+command regex dump_stuff "s/(.+)/image lookup -rn '\+\[\w+(\(\w+\))?\ \w+\]$' %1 /"
