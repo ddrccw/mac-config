@@ -93,3 +93,11 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.zsh_profile ] && source ~/.zsh_profile
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+type -p rbenv 1>/dev/null && eval "$(rbenv init -)"
+
+
+
+
+
+
