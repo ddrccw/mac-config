@@ -12,3 +12,6 @@ command regex rlook 's/(.+)/image lookup -rn %1/'
 command alias -H "Print value in ObjC context in hexadecimal" -h "Print in hex" -- cpx expression -f x -l objc --
 command regex ls 's/(.+)/po @import Foundation; [[NSFileManager defaultManager] contentsOfDirectoryAtPath:@"%1" error:nil]/'
 command regex dump_stuff "s/(.+)/image lookup -rn '\+\[\w+(\(\w+\))?\ \w+\]$' %1 /"
+command regex ivars 's/(.+)/expression -lobjc -O -- [%1 _ivarDescription]/'
+command regex methods 's/(.+)/expression -lobjc -O -- [%1 _shortMethodDescription]/'
+command regex lmethods 's/(.+)/expression -lobjc -O -- [%1 _methodDescription]/'
