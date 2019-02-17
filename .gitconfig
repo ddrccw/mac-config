@@ -21,7 +21,7 @@
 [core]
 	editor = /usr/bin/vim
 	quotepath = false   
-	excludesfile = /Users/alibaba/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	ignorecase = false
 [push]
 	default = simple
