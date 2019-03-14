@@ -51,6 +51,7 @@ rm -rf ${HOME}/.gitconfig
 rm -rf ${HOME}/.lldbinit
 rm -rf ${HOME}/.aria2
 rm -rf ${HOME}/.zshrc
+rm -rf ${HOME}/.pip/pip.conf
 
 #vim
 ln -s ${VIM_PATH}/.vimrc ${HOME}/.vimrc
@@ -65,6 +66,7 @@ ln -s ${CFG_PATH}/.gitconfig ${HOME}/.gitconfig
 ln -s ${CFG_PATH}/.lldbinit ${HOME}/.lldbinit
 ln -s ${CFG_PATH}/.aria2 ${HOME}/
 ln -s ${CFG_PATH}/.zshrc ${HOME}/.zshrc
+ln -s ${CFG_PATH}/pip.conf ${HOME}/.pip/pip.conf
 
 echo -e "$RESULT_CLR-------------------- Make Symbolic Links  --------------------$RESET_CLR"
 
