@@ -48,6 +48,7 @@ rm -rf ${HOME}/.vim
 rm -rf ${HOME}/.tmux.conf
 rm -rf ${HOME}/.tmux
 rm -rf ${HOME}/.gitconfig
+rm -rf ${HOME}/.gitignore_global
 rm -rf ${HOME}/.lldbinit
 rm -rf ${HOME}/.aria2
 rm -rf ${HOME}/.zshrc
