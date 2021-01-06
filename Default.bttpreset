@@ -54,7 +54,7 @@
     "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
     "BSTMoveTreshold" : 2,
     "BTTHideFomControlStripWhenOpen" : false,
-    "BTTNumberOfStarts" : 22086,
+    "BTTNumberOfStarts" : 22088,
     "BTTForceNormalClickPressure3F" : 150,
     "showSiriRemoteTab" : true,
     "SIRIScrollSpeed" : 1,
@@ -157,59 +157,13 @@
     "showOtherTriggersTab" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "F8CE3AD5-A7B9-45E9-B77B-D25F1FAFCD45",
+  "BTTPresetUUID" : "A3E9E174-7EBB-4B7D-9EFE-2147A11C312C",
   "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
       "BTTAppAutoInvertIcon" : 1,
       "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 12,
-          "BTTTriggerTypeDescription" : "三指向下轻扫",
-          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "无操作",
-          "BTTLayoutIndependentActionChar" : "w",
-          "BTTAutoAdaptActionToKeyboardLayout" : true,
-          "BTTShortcutToSend" : "55,13",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTRepeatDelay" : 0,
-          "BTTUUID" : "818EF6ED-694D-406C-BB63-811C41624586",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 0,
-          "BTTDisplayOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 113,
-          "BTTTriggerTypeDescription" : "指尖轻点左侧（单指固定）",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "无操作",
-          "BTTLayoutIndependentActionChar" : "TAB",
-          "BTTAutoAdaptActionToKeyboardLayout" : true,
-          "BTTShortcutToSend" : "59,48",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTRepeatDelay" : 0,
-          "BTTUUID" : "C1236DDF-E65B-48C6-BAB1-7F73D798AF4D",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 1,
-          "BTTDisplayOrder" : 0
-        },
         {
           "BTTTriggerType" : 163,
           "BTTTriggerTypeDescription" : "三指轻点两下",
@@ -227,25 +181,6 @@
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
           "BTTOrder" : 3,
-          "BTTDisplayOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 17,
-          "BTTTriggerTypeDescription" : "指尖轻点右侧（单指固定）",
-          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "无操作",
-          "BTTLayoutIndependentActionChar" : "TAB",
-          "BTTAutoAdaptActionToKeyboardLayout" : true,
-          "BTTShortcutToSend" : "59,48",
-          "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
-          "BTTRepeatDelay" : 0,
-          "BTTUUID" : "73DA408A-C687-4700-A8D5-DE8995690D6D",
-          "BTTNotesInsteadOfDescription" : 0,
-          "BTTEnabled" : 1,
-          "BTTModifierMode" : 0,
-          "BTTOrder" : 2,
           "BTTDisplayOrder" : 0
         },
         {
@@ -268,9 +203,9 @@
           "BTTDisplayOrder" : 0
         },
         {
-          "BTTTriggerType" : 16,
+          "BTTTriggerType" : 113,
           "BTTTriggerTypeDescription" : "指尖轻点左侧（单指固定）",
-          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
           "BTTPredefinedActionType" : -1,
           "BTTPredefinedActionName" : "无操作",
           "BTTLayoutIndependentActionChar" : "TAB",
@@ -279,11 +214,30 @@
           "BTTEnabled2" : 1,
           "BTTAlternateModifierKeys" : 0,
           "BTTRepeatDelay" : 0,
-          "BTTUUID" : "C0D4F92E-3B9F-4876-8712-16DD5396982F",
+          "BTTUUID" : "C1236DDF-E65B-48C6-BAB1-7F73D798AF4D",
           "BTTNotesInsteadOfDescription" : 0,
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
           "BTTOrder" : 1,
+          "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 12,
+          "BTTTriggerTypeDescription" : "三指向下轻扫",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "无操作",
+          "BTTLayoutIndependentActionChar" : "w",
+          "BTTAutoAdaptActionToKeyboardLayout" : true,
+          "BTTShortcutToSend" : "55,13",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "818EF6ED-694D-406C-BB63-811C41624586",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 0,
           "BTTDisplayOrder" : 0
         },
         {
@@ -300,6 +254,25 @@
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
           "BTTOrder" : 4,
+          "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 17,
+          "BTTTriggerTypeDescription" : "指尖轻点右侧（单指固定）",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "无操作",
+          "BTTLayoutIndependentActionChar" : "TAB",
+          "BTTAutoAdaptActionToKeyboardLayout" : true,
+          "BTTShortcutToSend" : "59,48",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "73DA408A-C687-4700-A8D5-DE8995690D6D",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 2,
           "BTTDisplayOrder" : 0
         },
         {
@@ -320,7 +293,34 @@
           "BTTModifierMode" : 0,
           "BTTOrder" : 2,
           "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 16,
+          "BTTTriggerTypeDescription" : "指尖轻点左侧（单指固定）",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "无操作",
+          "BTTLayoutIndependentActionChar" : "TAB",
+          "BTTAutoAdaptActionToKeyboardLayout" : true,
+          "BTTShortcutToSend" : "59,56,48",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "C0D4F92E-3B9F-4876-8712-16DD5396982F",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 1,
+          "BTTDisplayOrder" : 0
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
       ]
     }
   ],
