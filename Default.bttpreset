@@ -47,8 +47,8 @@
       "MouseVerticalScroll" : true,
       "UserPreferences" : true,
       "MouseHorizontalScroll" : true,
-      "MouseButtonDivision" : 55,
       "MouseMomentumScroll" : true,
+      "MouseButtonDivision" : 55,
       "MouseTwoFingerDoubleTapGesture" : 3,
       "MouseButtonMode" : "TwoButton"
     },
@@ -158,7 +158,7 @@
     "showOtherTriggersTab" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "B2CC46B5-A9FF-4DC2-8373-0E81682434EC",
+  "BTTPresetUUID" : "056D3614-64E0-420D-A97F-42FCAB33B039",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.google.Chrome",
@@ -181,6 +181,25 @@
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
           "BTTOrder" : 0,
+          "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 12,
+          "BTTTriggerTypeDescription" : "三指向下轻扫",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "无操作",
+          "BTTLayoutIndependentActionChar" : "w",
+          "BTTAutoAdaptActionToKeyboardLayout" : true,
+          "BTTShortcutToSend" : "55,13",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "133FBB2C-BBC0-46B3-9FA3-114CACE47680",
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 2,
           "BTTDisplayOrder" : 0
         },
         {
