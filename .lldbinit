@@ -1,9 +1,7 @@
-### Reveal LLDB commands support - DO NOT MODIFY
-command script import /Applications/Reveal.app/Contents/SharedSupport/Scripts/RevealServerCommands.py
-###
-
-command script import /usr/local/opt/chisel/libexec/fblldb.py
-
+# arm64
+command script import /opt/homebrew/opt/chisel/libexec/fblldb.py
+# x64
+# command script import /usr/local/opt/chisel/libexec/fblldb.py
 
 settings set target.x86-disassembly-flavor intel
 settings set target.skip-prologue false

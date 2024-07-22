@@ -89,6 +89,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 判断是否是arm64
+if [[ `uname -m` == 'arm64' ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 #非zsh约定的文件，仅用来放不要被git同步的本地配置
 [ -f ~/.zsh_profile ] && source ~/.zsh_profile
 
@@ -97,8 +102,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 type -p rbenv 1>/dev/null && eval "$(rbenv init -)"
 
 if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init --path)"
-	eval "$(pyenv init -)" 
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
 fi
 
 export NVM_DIR="$HOME/.nvm"
